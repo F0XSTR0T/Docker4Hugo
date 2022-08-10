@@ -1,0 +1,23 @@
+{{ define "main"}}
+    <main id="main">
+      <div>
+       <h1 id="title"><a href="{{ "" | relURL }}">Go Home</a></h1>
+      </div>
+    </main>
+{{ end }}
+
+<!--
+Automatic Loading 
+Your 404.html file can be set to load automatically when a visitor enters a mistaken URL path, dependent upon the web serving environment you are using. For example:
+
+GitHub Pages and GitLab Pages. The 404 page is automatic.
+Apache. You can specify ErrorDocument 404 /404.html in an .htaccess file in the root of your site.
+Nginx. You might specify error_page 404 /404.html; in your nginx.conf file. Details here.
+Amazon AWS S3. When setting a bucket up for static web serving, you can specify the error file from within the S3 GUI.
+Amazon CloudFront. You can specify the page in the Error Pages section in the CloudFront Console. Details here
+Caddy Server. Use the handle_errors directive to specify error pages for one or more status codes. Details here
+Netlify. Add /* /404.html 404 to content/_redirects. Details Here
+Azure Static website. You can specify the Error document path in the Static website configuration page of the Azure portal. More details are available in the Static website documentation.
+DigitalOcean App Platform. You can specify error_document in your app specification file or use control panel to set up error document. Details here.
+hugo server will not automatically load your custom 404.html file, but you can test the appearance of your custom “not found” page by navigating your browser to /404.html.
+-->

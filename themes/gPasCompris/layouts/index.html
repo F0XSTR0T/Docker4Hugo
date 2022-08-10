@@ -1,0 +1,68 @@
+{{ define "main" }}
+<div class="container mx-auto">
+    <h1 class="text-3xl font-bold text-center m-6 ">
+        Landing <span class="text-red-500">Page </span>!
+    </h1>
+    <div class="rounded overflow-hidden shadow-lg justify-items-center">
+        <img class="w-full" src="/minions.jpeg" alt="minions" class="content-center">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl text-center mb-2">{{ $.Site.Params.MainTitle }}</div>
+            <p class="text-gray-700 text-base">
+                {{ $.Site.Params.Lorem }}</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+            <h1 class="text-3xl font-bold text-center m-6">
+                {{ $.Site.Params.titre1 }}
+            </h1>
+            <div class="rounded overflow-hidden shadow-lg justify-items-center">
+                <img class="w-full" src="{{ $.Site.Params.img }}" alt="minions" class="content-center">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl text-center mb-2">{{ $.Site.Params.MainTitle }}</div>
+                    <p class="text-gray-700 text-base">
+                        {{ $.Site.Params.Lorem }}</p>
+                </div>
+            </div>
+        </div>       
+        <div>
+            <h1 class="text-3xl font-bold text-center m-6">
+                {{ $.Site.Params.titre2 }}
+            </h1>
+            <div class="rounded overflow-hidden shadow-lg justify-items-center">
+                <img class="w-full" src="/c2.jpeg" alt="minions">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl text-center mb-2">{{ $.Site.Params.MainTitle }}</div>
+                    <p class="text-gray-700 text-base">
+                        {{ $.Site.Params.Lorem }}/p>
+                </div>
+            </div>
+        </div>  
+
+        <div>
+            <h1 class="text-3xl font-bold text-center m-6">
+                {{ $.Site.Params.titre3 }}
+            </h1>
+            <div class="rounded overflow-hidden shadow-lg justify-items-center">
+                <img class="w-full content-center" src="/c1.jpeg" alt="minions">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl text-center mb-2">{{ $.Site.Params.MainTitle }}</div>
+                    <p class="text-gray-700 text-base">
+                        {{ $.Site.Params.Lorem }}</p>
+                </div>
+            </div>
+        </div> 
+    </div>    
+    <div class="grid grid-cols-2 border-solid border-2 border-sky-500">
+            <div class="w-full">
+                <p class="text-gray-900 text-base">
+                    {{ $.Site.Params.Lorem }}</p>
+            </div>
+            <div class="invisible md:visible">
+                <img class="w-full content-center" src="/c3.jpeg" alt="minions">
+            </div>
+    </div>    
+          
+<div>
+    {{ end }}
